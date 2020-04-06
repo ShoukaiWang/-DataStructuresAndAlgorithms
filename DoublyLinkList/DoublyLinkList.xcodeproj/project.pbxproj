@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		3C7ED410243AD59400062583 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C7ED40F243AD59400062583 /* main.c */; };
+		3C7ED41D243B0FB000062583 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C7ED41C243B0FB000062583 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3C7ED40A243AD59400062583 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		3C7ED418243B0FB000062583 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		3C7ED40C243AD59400062583 /* DoublyLinkList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DoublyLinkList; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7ED40F243AD59400062583 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		3C7ED41A243B0FB000062583 /* DoublyCircleLinkList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DoublyCircleLinkList; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7ED41C243B0FB000062583 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3C7ED409243AD59400062583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7ED417243B0FB000062583 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				3C7ED40E243AD59400062583 /* DoublyLinkList */,
+				3C7ED41B243B0FB000062583 /* DoublyCircleLinkList */,
 				3C7ED40D243AD59400062583 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				3C7ED40C243AD59400062583 /* DoublyLinkList */,
+				3C7ED41A243B0FB000062583 /* DoublyCircleLinkList */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				3C7ED40F243AD59400062583 /* main.c */,
 			);
 			path = DoublyLinkList;
+			sourceTree = "<group>";
+		};
+		3C7ED41B243B0FB000062583 /* DoublyCircleLinkList */ = {
+			isa = PBXGroup;
+			children = (
+				3C7ED41C243B0FB000062583 /* main.c */,
+			);
+			path = DoublyCircleLinkList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = 3C7ED40C243AD59400062583 /* DoublyLinkList */;
 			productType = "com.apple.product-type.tool";
 		};
+		3C7ED419243B0FB000062583 /* DoublyCircleLinkList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7ED41E243B0FB000062583 /* Build configuration list for PBXNativeTarget "DoublyCircleLinkList" */;
+			buildPhases = (
+				3C7ED416243B0FB000062583 /* Sources */,
+				3C7ED417243B0FB000062583 /* Frameworks */,
+				3C7ED418243B0FB000062583 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoublyCircleLinkList;
+			productName = DoublyCircleLinkList;
+			productReference = 3C7ED41A243B0FB000062583 /* DoublyCircleLinkList */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				ORGANIZATIONNAME = SK_Wang;
 				TargetAttributes = {
 					3C7ED40B243AD59400062583 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					3C7ED419243B0FB000062583 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
@@ -110,6 +159,7 @@
 			projectRoot = "";
 			targets = (
 				3C7ED40B243AD59400062583 /* DoublyLinkList */,
+				3C7ED419243B0FB000062583 /* DoublyCircleLinkList */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C7ED410243AD59400062583 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7ED416243B0FB000062583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7ED41D243B0FB000062583 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +309,22 @@
 			};
 			name = Release;
 		};
+		3C7ED41F243B0FB000062583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3C7ED420243B0FB000062583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +342,15 @@
 			buildConfigurations = (
 				3C7ED414243AD59400062583 /* Debug */,
 				3C7ED415243AD59400062583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C7ED41E243B0FB000062583 /* Build configuration list for PBXNativeTarget "DoublyCircleLinkList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7ED41F243B0FB000062583 /* Debug */,
+				3C7ED420243B0FB000062583 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
