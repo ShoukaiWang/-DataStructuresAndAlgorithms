@@ -68,7 +68,8 @@ Status ListTraverse(LinkList L) {
 
 
 /*
- 题目1：将2个递增的有序链表合并为一个有序链表; 要求结果链表仍然使用两个链表的存储空间,不另外占用其他的存储空间. 表中不允许有重复的数据；
+ 题目1:
+ 将2个递增的有序链表合并为一个有序链表; 要求结果链表仍然使用两个链表的存储空间,不另外占用其他的存储空间. 表中不允许有重复的数据；
  */
 
 void mergeTwoLists(LinkList *La, LinkList *Lb, LinkList *Lc) {
@@ -100,6 +101,7 @@ void mergeTwoLists(LinkList *La, LinkList *Lb, LinkList *Lc) {
 }
 
 /*
+ 题目2:
  已知两个链表A和B分别表示两个集合.其元素递增排列. 设计一个算法,用于求出A与B的交集,并存储在A链表中;
  */
 void Intersection(LinkList *La, LinkList *Lb, LinkList *Lc) {
@@ -139,6 +141,7 @@ void Intersection(LinkList *La, LinkList *Lb, LinkList *Lc) {
 }
 
 /*
+ 题目3:
  设计一个算法,将链表中所有节点的链接方向"原地旋转",即要求仅仅利用原表的存储空间. 换句话说,要求算法空间复杂度为O(1);
  例如:L={0,2,4,6,8,10}, 逆转后: L = {10,8,6,4,2,0};
  */
@@ -155,6 +158,7 @@ void Inverse(LinkList *L) {
 }
 
 /*
+ 题目4:
  设计一个算法,删除递增有序链表中值大于等于mink且小于等于maxk(mink,maxk是给定的两个参数,其值可以和表中的元素相同,也可以不同)的所有元素;
  */
 void DeleteMinMax(LinkList *L, int mink, int maxk) {
@@ -181,6 +185,7 @@ void DeleteMinMax(LinkList *L, int mink, int maxk) {
 }
 
 /*
+ 题目5:
  设将n(n>1)个整数存放到一维数组R中, 试设计一个在时间和空间两方面都尽可能高效的算法;将R中保存的序列循环左移p个位置(0<p<n)个位置, 即将R中的数据由(x0,x1,......,xn-1)变换为(xp,xp+1,...,xn-1,x0,x1,...,xp-1).
  
  例如: pre[10] = {0,1,2,3,4,5,6,7,8,9},
@@ -210,6 +215,7 @@ void RotateLeft(int *pre, int n, int p) {
 }
 
 /*
+ 题目6:
   已知一个整数序列A = (a0,a1,a2,...an-1),其中(0<= ai <=n),(0<= i<=n). 若存在ap1= ap2 = ...= apm = x,且m>n/2(0<=pk<n,1<=k<=m),则称x 为 A的主元素. 例如,A = (0,5,5,3,5,7,5,5),则5是主元素; 若B = (0,5,5,3,5,1,5,7),则A 中没有主元素,假设A中的n个元素保存在一个一维数组中,请设计一个尽可能高效的算法,找出数组元素中的主元素,若存在主元素则输出该元素,否则输出-1.
  */
 int MainElement(int *A, int n) {
@@ -244,6 +250,7 @@ int MainElement(int *A, int n) {
 }
 
 /*
+ 题目7:
  用单链表保存m个整数, 结点的结构为(data,link),且|data|<=n(n为正整数). 现在要去设计一个时间复杂度尽可能高效的算法. 对于链表中的data 绝对值相等的结点, 仅保留第一次出现的结点,而删除其余绝对值相等的结点.
  例如,链表A = {21,-15,15,-7,15},
  删除后的链表A={21,-15,-7};
