@@ -87,5 +87,35 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
     
+    Status j;
+    int i = 0;
+    QElemType d;
+    SqQueue Q;
+    InitQueue(&Q);
+    printf("初始化队列后，队列空否？%u(1:空 0:否)\n", QueueEmpty(Q));
+    
+    printf("入队:\n");
+    while (i < 10) {
+        EnQueue(&Q, i);
+        i++;
+    }
+    QueueTraverse(Q);
+    printf("队列长度为: %d\n", QueueLength(Q));
+    printf("现在队列空否？%u(1:空 0:否)\n", QueueEmpty(Q));
+    printf("出队:\n");
+    
+    //出队
+    DeQueue(&Q, &d);
+    printf("出队的元素:%d\n", d);
+    QueueTraverse(Q);
+    
+    //获取队头
+    j = GetHead(Q, &d);
+    if(j)
+        printf("现在队头元素为: %d\n", d);
+    
+    ClearQueue(&Q);
+    printf("清空队列后, 队列空否？%u(1:空 0:否)\n", QueueEmpty(Q));
+    
     return 0;
 }

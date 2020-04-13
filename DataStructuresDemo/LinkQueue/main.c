@@ -41,19 +41,20 @@ Status InitQueue(LinkQueue *Q) {
 }
 
 Status DestoryQueue(LinkQueue *Q) {
-    while (Q->rear) {
-        Q->rear = Q->front;
-        Q->front = Q->front->next;
-        free(Q->rear);
+    while (Q->front) {
+        Q->rear = Q->front->next;
+        free(Q->front);
+        Q->front = Q->rear;
     }
+    
     return OK;
 }
 
 Status ClearQueue(LinkQueue *Q) {
     QueueNodePtr p, q;
     Q->rear = Q->front;
-    p = Q->front;
-    Q->front = NULL;
+    p = Q->front->next;
+    Q->front->next = NULL;
     while (p) {
         q = p;
         p = p->next;
@@ -115,11 +116,72 @@ Status GetHead(LinkQueue Q, QElemType *e) {
 }
 
 Status QueueTraverse(LinkQueue Q) {
+    QueueNodePtr p;
+    p = Q.front->next;
+    while (p) {
+        printf("%d ", p->data);
+        p = p->next;
+    }
+    printf("\n");
     return OK;
 }
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
+    
+    Status iStatus;
+    QElemType d;
+    LinkQueue q;
+    
+    //1.初始化队列q
+    iStatus = InitQueue(&q);
+    
+    //2. 判断是否创建成
+    if (iStatus) {
+        printf("成功地构造了一个空队列\n");
+    }
+    
+    //3.判断队列是否为空
+    printf("是否为空队列?%d (1:是 0:否)\n", QueueEmpty(q));
+    
+    //4.获取队列的长度
+    printf("队列的长度为%d\n", QueueLength(q));
+    
+    //5.插入元素到队列中
+    EnQueue(&q, -3);
+    EnQueue(&q, 6);
+    EnQueue(&q, 12);
+    
+    printf("队列的长度为%d\n", QueueLength(q));
+    printf("是否为空队列?%d (1:是 0:否)\n", QueueEmpty(q));
+    
+    //6.遍历队列
+    printf("队列中的元素如下:\n");
+    QueueTraverse(q);
+
+    //7.获取队列头元素
+    iStatus = GetHead(q, &d);
+    if (iStatus == OK) {
+        printf("队头元素是:%d\n", d);
+    }
+    
+    //8.删除队头元素
+    iStatus =DeQueue(&q, &d);
+    if (iStatus == OK) {
+        printf("删除了的队头元素为:%d\n", d);
+    }
+    
+    //9.获取队头元素
+    iStatus = GetHead(q, &d);
+    if (iStatus == OK) {
+        printf("新的队头元素为:%d\n", d);
+    }
+    
+    //10.清空队列
+    ClearQueue(&q);
+    
+    //11.销毁队列
+    DestoryQueue(&q);
     return 0;
 }
