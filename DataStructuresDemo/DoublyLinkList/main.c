@@ -2,7 +2,7 @@
 //  main.c
 //  DoublyLinkList
 //
-//  Created by SK_Wang on 2020/4/6.
+//  Created by SK_Wang on 2020/4/13.
 //  Copyright © 2020 SK_Wang. All rights reserved.
 //
 
@@ -183,3 +183,4 @@ int main(int argc, const char * argv[]) {
     
     return 0;
 }
+
