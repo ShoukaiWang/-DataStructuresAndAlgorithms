@@ -1,6 +1,6 @@
 //
 //  main.c
-//  leetcode_20_有效括号
+//  02_有效括号_leetcode_20
 //
 //  Created by SK_Wang on 2020/4/18.
 //  Copyright © 2020 SK_Wang. All rights reserved.
