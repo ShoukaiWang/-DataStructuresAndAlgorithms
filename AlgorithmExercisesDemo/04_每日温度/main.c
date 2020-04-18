@@ -59,12 +59,8 @@ int * dailyTemperatures2(int * T, int TSize, int * returnSize) {
     int *stack_index = (int *)malloc(sizeof(int) * TSize);
     int top = 0;
     int tIndex;
-    
     for (int i = 0; i < TSize; i++) {
         result[i] = 0;
-    }
-    
-    for (int i = 0; i < TSize; i++) {
         while (top > 0 && T[i] > T[stack_index[top - 1]]) {
             tIndex = stack_index[top - 1];
             result[tIndex] = i - tIndex;
