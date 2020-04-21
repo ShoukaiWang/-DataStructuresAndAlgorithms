@@ -13,6 +13,7 @@
 		3C0B7EF8244B1C8C00F698CC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B7EF7244B1C8C00F698CC /* main.c */; };
 		3C0B7F0E244B311A00F698CC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B7F0D244B311A00F698CC /* main.c */; };
 		3C0B7F19244B314100F698CC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B7F18244B314100F698CC /* main.c */; };
+		3C8EB699244EFFCF00A88001 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C8EB698244EFFCF00A88001 /* main.c */; };
 		3CA5E2ED243EBC7100A0CC78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3CA5E2EC243EBC7100A0CC78 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		3C8EB694244EFFCF00A88001 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		3CA5E2E7243EBC7100A0CC78 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +105,8 @@
 		3C0B7F0D244B311A00F698CC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		3C0B7F16244B314100F698CC /* 02_有效括号_leetcode_20 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "02_有效括号_leetcode_20"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0B7F18244B314100F698CC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		3C8EB696244EFFCF00A88001 /* 06_去除重复字母_Leetcode_316 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "06_去除重复字母_Leetcode_316"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8EB698244EFFCF00A88001 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		3CA5E2E9243EBC7100A0CC78 /* AlgorithmExercisesDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmExercisesDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA5E2EC243EBC7100A0CC78 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +148,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3C0B7F13244B314100F698CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8EB693244EFFCF00A88001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,6 +219,14 @@
 			path = "02_有效括号_leetcode_20";
 			sourceTree = "<group>";
 		};
+		3C8EB697244EFFCF00A88001 /* 06_去除重复字母_Leetcode_316 */ = {
+			isa = PBXGroup;
+			children = (
+				3C8EB698244EFFCF00A88001 /* main.c */,
+			);
+			path = "06_去除重复字母_Leetcode_316";
+			sourceTree = "<group>";
+		};
 		3CA5E2E0243EBC7100A0CC78 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +237,7 @@
 				3C0B7EEB244B17F500F698CC /* 03_爬楼梯 */,
 				3C0B7EF6244B1C8C00F698CC /* 04_每日温度 */,
 				3C0B7F0C244B311A00F698CC /* 05_字符串解码_leetcode_394 */,
+				3C8EB697244EFFCF00A88001 /* 06_去除重复字母_Leetcode_316 */,
 				3CA5E2EA243EBC7100A0CC78 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -224,6 +252,7 @@
 				3C0B7EF5244B1C8C00F698CC /* 04_每日温度 */,
 				3C0B7F0B244B311A00F698CC /* 05_字符串解码_leetcode_394 */,
 				3C0B7F16244B314100F698CC /* 02_有效括号_leetcode_20 */,
+				3C8EB696244EFFCF00A88001 /* 06_去除重复字母_Leetcode_316 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,6 +370,23 @@
 			productReference = 3C0B7F16244B314100F698CC /* 02_有效括号_leetcode_20 */;
 			productType = "com.apple.product-type.tool";
 		};
+		3C8EB695244EFFCF00A88001 /* 06_去除重复字母_Leetcode_316 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C8EB69C244EFFCF00A88001 /* Build configuration list for PBXNativeTarget "06_去除重复字母_Leetcode_316" */;
+			buildPhases = (
+				3C8EB692244EFFCF00A88001 /* Sources */,
+				3C8EB693244EFFCF00A88001 /* Frameworks */,
+				3C8EB694244EFFCF00A88001 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "06_去除重复字母_Leetcode_316";
+			productName = "06_去除重复字母_Leetcode_316";
+			productReference = 3C8EB696244EFFCF00A88001 /* 06_去除重复字母_Leetcode_316 */;
+			productType = "com.apple.product-type.tool";
+		};
 		3CA5E2E8243EBC7100A0CC78 /* AlgorithmExercisesDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CA5E2F0243EBC7100A0CC78 /* Build configuration list for PBXNativeTarget "AlgorithmExercisesDemo" */;
@@ -385,6 +431,9 @@
 					3C0B7F15244B314100F698CC = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					3C8EB695244EFFCF00A88001 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 					3CA5E2E8243EBC7100A0CC78 = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -410,6 +459,7 @@
 				3C0B7EE9244B17F500F698CC /* 03_爬楼梯 */,
 				3C0B7EF4244B1C8C00F698CC /* 04_每日温度 */,
 				3C0B7F0A244B311A00F698CC /* 05_字符串解码_leetcode_394 */,
+				3C8EB695244EFFCF00A88001 /* 06_去除重复字母_Leetcode_316 */,
 			);
 		};
 /* End PBXProject section */
@@ -460,6 +510,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C0B7F19244B314100F698CC /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8EB692244EFFCF00A88001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8EB699244EFFCF00A88001 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +621,22 @@
 			name = Debug;
 		};
 		3C0B7F1C244B314100F698CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3C8EB69A244EFFCF00A88001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3C8EB69B244EFFCF00A88001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -748,6 +822,15 @@
 			buildConfigurations = (
 				3C0B7F1B244B314100F698CC /* Debug */,
 				3C0B7F1C244B314100F698CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C8EB69C244EFFCF00A88001 /* Build configuration list for PBXNativeTarget "06_去除重复字母_Leetcode_316" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C8EB69A244EFFCF00A88001 /* Debug */,
+				3C8EB69B244EFFCF00A88001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
