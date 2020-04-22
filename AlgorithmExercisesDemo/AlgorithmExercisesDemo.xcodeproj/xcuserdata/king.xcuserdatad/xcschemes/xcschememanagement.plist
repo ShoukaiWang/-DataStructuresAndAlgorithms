@@ -22,12 +22,12 @@
 		<key>03_爬楼梯.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>6</integer>
 		</dict>
 		<key>04_每日温度.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>5</integer>
 		</dict>
 		<key>05_字符串解码_leetcode_394.xcscheme_^#shared#^_</key>
 		<dict>
@@ -37,7 +37,17 @@
 		<key>06_去除重复字母_Leetcode_316.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>7</integer>
+		</dict>
+		<key>07_字符串匹配_BF实现.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>08_字符串匹配_RK实现.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
 		</dict>
 		<key>AlgorithmExercisesDemo.xcscheme_^#shared#^_</key>
 		<dict>
