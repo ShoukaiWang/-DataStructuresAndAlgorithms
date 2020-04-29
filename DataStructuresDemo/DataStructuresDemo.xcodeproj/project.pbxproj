@@ -16,6 +16,7 @@
 		3CD8C98F2443E7820058E3BC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8C98E2443E7820058E3BC /* main.c */; };
 		3CD8C99A2443F4540058E3BC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8C9992443F4540058E3BC /* main.c */; };
 		62136DE12456636200635818 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62136DE02456636200635818 /* main.c */; };
+		62136DEC245925A300635818 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62136DEB245925A300635818 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -100,6 +101,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		62136DE7245925A300635818 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +131,8 @@
 		3CD8C9992443F4540058E3BC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62136DDE2456636200635818 /* SqBiTree Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SqBiTree Demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62136DE02456636200635818 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		62136DE9245925A300635818 /* LinkBiTreeDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinkBiTreeDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		62136DEB245925A300635818 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +199,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62136DE6245925A300635818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -242,6 +261,7 @@
 				3C8F9055244439E600B014AA /* Queue */,
 				3C8F90602444974B00B014AA /* LinkQueue */,
 				62136DDF2456636200635818 /* SqBiTree Demo */,
+				62136DEA245925A300635818 /* LinkBiTreeDemo */,
 				3CD8C97F2443E3100058E3BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -258,6 +278,7 @@
 				3C8F9054244439E600B014AA /* Queue */,
 				3C8F905F2444974B00B014AA /* LinkQueue */,
 				62136DDE2456636200635818 /* SqBiTree Demo */,
+				62136DE9245925A300635818 /* LinkBiTreeDemo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,6 +313,14 @@
 				62136DE02456636200635818 /* main.c */,
 			);
 			path = "SqBiTree Demo";
+			sourceTree = "<group>";
+		};
+		62136DEA245925A300635818 /* LinkBiTreeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				62136DEB245925A300635818 /* main.c */,
+			);
+			path = LinkBiTreeDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +479,23 @@
 			productReference = 62136DDE2456636200635818 /* SqBiTree Demo */;
 			productType = "com.apple.product-type.tool";
 		};
+		62136DE8245925A300635818 /* LinkBiTreeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62136DEF245925A300635818 /* Build configuration list for PBXNativeTarget "LinkBiTreeDemo" */;
+			buildPhases = (
+				62136DE5245925A300635818 /* Sources */,
+				62136DE6245925A300635818 /* Frameworks */,
+				62136DE7245925A300635818 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkBiTreeDemo;
+			productName = LinkBiTreeDemo;
+			productReference = 62136DE9245925A300635818 /* LinkBiTreeDemo */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -486,6 +532,9 @@
 					62136DDD2456636200635818 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					62136DE8245925A300635818 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 3CD8C9792443E3100058E3BC /* Build configuration list for PBXProject "DataStructuresDemo" */;
@@ -510,6 +559,7 @@
 				3C8F9053244439E500B014AA /* Queue */,
 				3C8F905E2444974B00B014AA /* LinkQueue */,
 				62136DDD2456636200635818 /* SqBiTree Demo */,
+				62136DE8245925A300635818 /* LinkBiTreeDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -584,6 +634,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				62136DE12456636200635818 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62136DE5245925A300635818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62136DEC245925A300635818 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,6 +901,22 @@
 			};
 			name = Release;
 		};
+		62136DED245925A300635818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62136DEE245925A300635818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -932,6 +1006,15 @@
 			buildConfigurations = (
 				62136DE22456636200635818 /* Debug */,
 				62136DE32456636200635818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62136DEF245925A300635818 /* Build configuration list for PBXNativeTarget "LinkBiTreeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62136DED245925A300635818 /* Debug */,
+				62136DEE245925A300635818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
