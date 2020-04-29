@@ -157,7 +157,6 @@ void PostOrderTraverse(BiTree T) {
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
-    int i;
     BiTree T;
     CElemType e1;
     
