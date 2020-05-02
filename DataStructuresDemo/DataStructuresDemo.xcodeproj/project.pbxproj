@@ -21,6 +21,8 @@
 		628BB17E2459A1F900B92140 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 628BB17D2459A1F900B92140 /* main.c */; };
 		62B3B3F2245C18BA0013F4A6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62B3B3F1245C18BA0013F4A6 /* main.c */; };
 		62B3B3FD245C8BCB0013F4A6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62B3B3FC245C8BCB0013F4A6 /* main.c */; };
+		62F2C81B245D7C3800FFA87F /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 62F2C81A245D7C3800FFA87F /* Queue.c */; };
+		62F2C81C245D805E00FFA87F /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 62F2C81A245D7C3800FFA87F /* Queue.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -181,6 +183,8 @@
 		62B3B3F1245C18BA0013F4A6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62B3B3FA245C8BCB0013F4A6 /* ALGraphDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ALGraphDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B3B3FC245C8BCB0013F4A6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		62F2C819245D7C3800FFA87F /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		62F2C81A245D7C3800FFA87F /* Queue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +431,8 @@
 			isa = PBXGroup;
 			children = (
 				62B3B3F1245C18BA0013F4A6 /* main.c */,
+				62F2C819245D7C3800FFA87F /* Queue.h */,
+				62F2C81A245D7C3800FFA87F /* Queue.c */,
 			);
 			path = MGraphDemo;
 			sourceTree = "<group>";
@@ -866,6 +872,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62B3B3F2245C18BA0013F4A6 /* main.c in Sources */,
+				62F2C81B245D7C3800FFA87F /* Queue.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -874,6 +881,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62B3B3FD245C8BCB0013F4A6 /* main.c in Sources */,
+				62F2C81C245D805E00FFA87F /* Queue.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

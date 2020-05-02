@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
+#include "Queue.h"
 
 #define MAX_VERTEX_NUM 50
 #define true 1
@@ -112,6 +113,41 @@ void DFSTraverse(ALGraph G) {
         }
     }
     printf("\n");
+}
+
+/*
+邻接表广度优先搜索
+*/
+
+void BFSTraverse(ALGraph G) {
+    for (int i = 0; i < G.node_num; i++) {
+        visited[i] = FALSE;
+    }
+    
+    SqQueue Q;
+    InitQueue(&Q);
+    ArcNode *p;
+    
+    for (int i = 0; i < G.node_num; i++) {
+        if (!visited[i]) {
+            visited[i] = TRUE;
+            printf("%c ", G.adjlist[i].data);
+            
+            EnQueue(&Q, i);
+            while (!QueueEmpty(Q)) {
+                DeQueue(&Q, &i);
+                p = G.adjlist[i].firstedge;
+                while (p) {
+                    if (!visited[p->adjvex]) {
+                        visited[p->adjvex] = TRUE;
+                        printf("%c ", G.adjlist[p->adjvex].data);
+                        EnQueue(&Q, p->adjvex);
+                    }
+                    p = p->nextArc;
+                }
+            }
+        }
+    }
 }
 
 
