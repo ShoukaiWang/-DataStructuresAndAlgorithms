@@ -80,6 +80,41 @@ void putGraph(GraphLink G){
     }
 }
 
+/*
+ 邻接表深度优先搜索
+ */
+
+BOOL visited[MAX_VERTEX_NUM];
+
+void DFS(ALGraph G, int v) {
+    visited[v] = true;
+    printf("%c", G.adjlist[v].data);
+    
+    ArcNode *p;
+    p = G.adjlist[v].firstedge;
+    
+    while (p) {
+        if (!visited[p->adjvex]) {
+            DFS(G, p->adjvex);
+        }
+        p = p->nextArc;
+    }
+}
+
+void DFSTraverse(ALGraph G) {
+    for (int i = 0; i < G.node_num; i++) {
+        visited[i] = false;
+    }
+    
+    for (int i = 0; i < G.node_num; i++) {
+        if (!visited[i]) {
+            DFS(G, i);
+        }
+    }
+    printf("\n");
+}
+
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");

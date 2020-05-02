@@ -10,13 +10,17 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
+#include <time.h>
 
 #define INFINITYC 0
 #define MAX_VERTEX_NUM 50
+#define TRUE 1
+#define FALSE 0
 
 typedef int Status;
 typedef char VertexType;
 typedef int EdgeType;
+typedef int Boolean;
 
 typedef struct MGraph {
     VertexType vexs[MAX_VERTEX_NUM];
@@ -31,8 +35,8 @@ void CreateMGraph(MGraph *G) {
     
     int i, j, w;
     for (i = 0; i < G->numNodes; i++) {
-        scanf("%c", &G->vexs[i]);
         getchar();
+        scanf("%c", &G->vexs[i]);
     }
     
     for (i = 0; i < G->numNodes; i++) {
@@ -57,12 +61,43 @@ void CreateMGraph(MGraph *G) {
     printf("\n");
 }
 
+/*
+ 深度优先搜索
+ */
+
+Boolean visited[MAX_VERTEX_NUM];
+
+void DFS(MGraph G, int v) {
+    visited[v] = TRUE;
+    printf("%c ", G.vexs[v]);
+    
+    for (int i = 0; i < G.numNodes; i++) {
+        if (!visited[i] && G.arc[v][i] == 1) {
+            DFS(G, i);
+        }
+    }
+}
+
+void DFSTraverse(MGraph G) {
+    for (int i = 0; i < G.numNodes; i++) {
+        visited[i] = FALSE;
+    }
+    
+    for (int i = 0; i < G.numNodes; i++) {
+        if (!visited[i]) {
+            DFS(G, i);
+        }
+    }
+    printf("\n");
+}
+
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("邻接矩阵实现图的存储\n");
     MGraph G;
     CreateMGraph(&G);
+    DFSTraverse(G);
     
     return 0;
 }
