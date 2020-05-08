@@ -22,6 +22,7 @@
 		62B3B3F2245C18BA0013F4A6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62B3B3F1245C18BA0013F4A6 /* main.c */; };
 		62B3B3FD245C8BCB0013F4A6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62B3B3FC245C8BCB0013F4A6 /* main.c */; };
 		62E0A6F72464F4CD00A9A729 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E0A6F62464F4CD00A9A729 /* main.c */; };
+		62E0A702246532C200A9A729 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E0A701246532C200A9A729 /* main.c */; };
 		62F2C81B245D7C3800FFA87F /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 62F2C81A245D7C3800FFA87F /* Queue.c */; };
 		62F2C81C245D805E00FFA87F /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 62F2C81A245D7C3800FFA87F /* Queue.c */; };
 /* End PBXBuildFile section */
@@ -162,6 +163,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		62E0A6FD246532C200A9A729 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -195,6 +205,8 @@
 		62B3B3FC245C8BCB0013F4A6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62E0A6F42464F4CD00A9A729 /* PrimDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrimDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E0A6F62464F4CD00A9A729 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		62E0A6FF246532C200A9A729 /* KruskalDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KruskalDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E0A701246532C200A9A729 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62F2C819245D7C3800FFA87F /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		62F2C81A245D7C3800FFA87F /* Queue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -305,6 +317,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62E0A6FC246532C200A9A729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -366,6 +385,7 @@
 				62B3B3F0245C18BA0013F4A6 /* MGraphDemo */,
 				62B3B3FB245C8BCB0013F4A6 /* ALGraphDemo */,
 				62E0A6F52464F4CD00A9A729 /* PrimDemo */,
+				62E0A700246532C200A9A729 /* KruskalDemo */,
 				3CD8C97F2443E3100058E3BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -388,6 +408,7 @@
 				62B3B3EF245C18BA0013F4A6 /* MGraphDemo */,
 				62B3B3FA245C8BCB0013F4A6 /* ALGraphDemo */,
 				62E0A6F42464F4CD00A9A729 /* PrimDemo */,
+				62E0A6FF246532C200A9A729 /* KruskalDemo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -472,6 +493,14 @@
 				62E0A6F62464F4CD00A9A729 /* main.c */,
 			);
 			path = PrimDemo;
+			sourceTree = "<group>";
+		};
+		62E0A700246532C200A9A729 /* KruskalDemo */ = {
+			isa = PBXGroup;
+			children = (
+				62E0A701246532C200A9A729 /* main.c */,
+			);
+			path = KruskalDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -732,6 +761,23 @@
 			productReference = 62E0A6F42464F4CD00A9A729 /* PrimDemo */;
 			productType = "com.apple.product-type.tool";
 		};
+		62E0A6FE246532C200A9A729 /* KruskalDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62E0A703246532C200A9A729 /* Build configuration list for PBXNativeTarget "KruskalDemo" */;
+			buildPhases = (
+				62E0A6FB246532C200A9A729 /* Sources */,
+				62E0A6FC246532C200A9A729 /* Frameworks */,
+				62E0A6FD246532C200A9A729 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KruskalDemo;
+			productName = KruskalDemo;
+			productReference = 62E0A6FF246532C200A9A729 /* KruskalDemo */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -786,6 +832,9 @@
 					62E0A6F32464F4CD00A9A729 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					62E0A6FE246532C200A9A729 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 3CD8C9792443E3100058E3BC /* Build configuration list for PBXProject "DataStructuresDemo" */;
@@ -816,6 +865,7 @@
 				62B3B3EE245C18BA0013F4A6 /* MGraphDemo */,
 				62B3B3F9245C8BCB0013F4A6 /* ALGraphDemo */,
 				62E0A6F32464F4CD00A9A729 /* PrimDemo */,
+				62E0A6FE246532C200A9A729 /* KruskalDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -940,6 +990,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				62E0A6F72464F4CD00A9A729 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62E0A6FB246532C200A9A729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E0A702246532C200A9A729 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1295,6 +1353,22 @@
 			};
 			name = Release;
 		};
+		62E0A704246532C200A9A729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62E0A705246532C200A9A729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1438,6 +1512,15 @@
 			buildConfigurations = (
 				62E0A6F82464F4CD00A9A729 /* Debug */,
 				62E0A6F92464F4CD00A9A729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62E0A703246532C200A9A729 /* Build configuration list for PBXNativeTarget "KruskalDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62E0A704246532C200A9A729 /* Debug */,
+				62E0A705246532C200A9A729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
